@@ -198,6 +198,8 @@ button{
 
     box-shadow:0 0 30px #ff4d8d;
 
+    min-width:220px;
+
 }
 
 button:hover{
@@ -214,17 +216,21 @@ button:hover{
 
 .letter-card{
 
-    width:700px;
+    width:min(700px,90%);
 
-    background:rgba(255,255,255,.12);
+    background: rgba(255,255,255,.12);
 
-    backdrop-filter:blur(18px);
-
-    padding:40px;
+    backdrop-filter: blur(18px);
 
     border-radius:25px;
 
-    box-shadow:0 0 40px rgba(255,255,255,.25);
+    padding:40px;
+
+    box-shadow:0 0 30px rgba(255,255,255,.2);
+
+    margin:auto;
+
+    box-sizing:border-box;
 
 }
 
@@ -252,6 +258,8 @@ button:hover{
 
     width:340px;
     height:450px;
+
+    max-width:100%;
 
     object-fit:cover;
 
@@ -422,5 +430,167 @@ button:hover{
 #photo{
 
     transition:opacity .5s;
+
+}
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+
+/* Tablet */
+@media (max-width:1024px){
+
+    .title{
+        font-size:52px;
+    }
+
+    .subtitle{
+        font-size:30px;
+    }
+
+    #photo{
+        width:300px;
+        height:400px;
+    }
+
+}
+
+/* HP */
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    section{
+        padding:25px;
+    }
+
+    .title{
+
+        font-size:34px;
+
+    }
+
+    .subtitle{
+
+        font-size:22px;
+
+    }
+
+    .quote{
+
+        font-size:16px;
+
+        line-height:28px;
+
+        width:100%;
+
+    }
+
+    .letter-card{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+    .letter-card p{
+
+        font-size:17px;
+
+        line-height:30px;
+
+    }
+
+    #photo{
+
+        width:220px;
+
+        height:300px;
+
+    }
+
+    button{
+
+        width:100%;
+
+        max-width:260px;
+
+        font-size:18px;
+
+        padding:16px 20px;
+
+}
+
+    #moon{
+
+        width:65px;
+
+        height:65px;
+
+        top:20px;
+
+        right:20px;
+
+    }
+
+    #clouds{
+
+        display:none;
+
+    }
+
+}
+
+/* HP kecil */
+@media (max-width:480px){
+
+    .title{
+
+        font-size:28px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    #photo{
+
+        width:70%;
+
+        max-width:220px;
+
+        height:auto;
+
+    }
+
+    #moon{
+
+        width:50px;
+
+        height:50px;
+
+        right:15px;
+
+        top:15px;
+
+    }
+
+    button{
+
+        width:100%;
+
+        max-width:220px;
+
+        font-size:16px;
+
+        padding:14px 18px;
+
+    }
 
 }
