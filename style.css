@@ -1,0 +1,426 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    background:#020617;
+    color:white;
+
+}
+
+/* ===========================
+   BINTANG
+=========================== */
+
+#stars{
+
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-5;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:45px 45px;
+
+    animation:twinkle 5s infinite;
+
+}
+
+@keyframes twinkle{
+
+    0%{opacity:.4;}
+    50%{opacity:1;}
+    100%{opacity:.4;}
+
+}
+
+/* ===========================
+   BULAN
+=========================== */
+
+#moon{
+
+    position:absolute;
+
+    top:60px;
+    right:90px;
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background:#fff6b7;
+
+    box-shadow:
+    0 0 40px #fff8cc,
+    0 0 80px #fff8cc,
+    0 0 120px #fff8cc;
+
+}
+
+/* ===========================
+   CLOUD
+=========================== */
+
+#clouds{
+
+    position:absolute;
+
+    top:90px;
+
+    width:250px;
+    height:60px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:50px;
+
+    filter:blur(8px);
+
+    animation:cloudMove 35s linear infinite;
+
+}
+
+@keyframes cloudMove{
+
+    from{
+
+        left:-300px;
+
+    }
+
+    to{
+
+        left:110%;
+
+    }
+
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ===========================
+   JUDUL
+=========================== */
+
+.title{
+
+    font-size:65px;
+
+    color:#FFD166;
+
+    text-shadow:0 0 25px gold;
+
+}
+
+.subtitle{
+
+    margin-top:10px;
+
+    font-size:38px;
+
+    color:#ff8fab;
+
+}
+
+.quote{
+
+    margin-top:25px;
+
+    line-height:35px;
+
+    font-size:22px;
+
+    color:#eee;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button{
+
+    margin-top:45px;
+
+    padding:18px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff4d8d;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 0 30px #ff4d8d;
+
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+    background:#ff1f6d;
+
+}
+
+/* ===========================
+   SURAT
+=========================== */
+
+.letter-card{
+
+    width:700px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 0 40px rgba(255,255,255,.25);
+
+}
+
+.letter-card h2{
+
+    color:#FFD166;
+
+}
+
+.letter-card p{
+
+    margin-top:20px;
+
+    line-height:34px;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   FOTO
+=========================== */
+
+#photo{
+
+    width:340px;
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:6px solid white;
+
+    margin-top:30px;
+
+    box-shadow:0 0 40px pink;
+
+    transition:.6s;
+
+}
+
+#photo:hover{
+
+    transform:scale(1.05) rotate(-2deg);
+
+}
+
+#caption{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   BALON
+=========================== */
+
+.balloon{
+
+    position:absolute;
+
+    bottom:-180px;
+
+    width:70px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    animation:fly 13s linear infinite;
+
+}
+
+.balloon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:2px;
+
+    height:90px;
+
+    background:white;
+
+    left:50%;
+
+    top:90px;
+
+}
+
+.pink{
+
+    left:10%;
+
+    background:#ff4d8d;
+
+}
+
+.blue{
+
+    left:28%;
+
+    background:#4dabf7;
+
+    animation-delay:2s;
+
+}
+
+.yellow{
+
+    left:72%;
+
+    background:#ffd43b;
+
+    animation-delay:5s;
+
+}
+
+.green{
+
+    left:88%;
+
+    background:#51cf66;
+
+    animation-delay:8s;
+
+}
+
+@keyframes fly{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-130vh);
+
+    }
+
+}
+
+/* ===========================
+   ENDING
+=========================== */
+
+#ending h1{
+
+    color:#FFD166;
+
+    text-shadow:0 0 30px gold;
+
+}
+
+#ending h2{
+
+    margin-top:20px;
+
+}
+
+#ending p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+}
+
+/* ===========================
+   FIREWORKS
+=========================== */
+
+#fireworks{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+}
+
+#photo{
+
+    transition:opacity .5s;
+
+}

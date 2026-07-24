@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Musik -->
+    <audio id="bgMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Background -->
+    <div id="stars"></div>
+    <div id="moon"></div>
+    <div id="clouds"></div>
+
+    <!-- Balon -->
+    <div id="balloons">
+
+        <div class="balloon pink"></div>
+        <div class="balloon blue"></div>
+        <div class="balloon yellow"></div>
+        <div class="balloon green"></div>
+
+    </div>
+
+    <!-- Halaman Awal -->
+    <section id="home">
+
+        <h1 class="title">
+         🎂Happy Birthday🎂
+        </h1>
+
+        <h2 class="subtitle">
+            To Me
+        </h2>
+
+        <p class="quote">
+
+            Another year.<br>
+            Another chapter.<br>
+            Thank you for staying strong.
+
+        </p>
+
+        <button onclick="startJourney()">
+
+            🎁 Begin My Journey
+
+        </button>
+
+    </section>
+
+    <!-- Surat -->
+
+    <section id="letter" class="hidden">
+
+        <div class="letter-card">
+
+            <h2>💌 Dear Me</h2>
+
+            <p>
+
+                Happy Birthday.
+
+                <br><br>
+
+                Thank you for surviving
+                another year.
+
+                <br><br>
+
+                Maybe life wasn't easy.
+
+                But...
+
+                You never gave up.
+
+                <br><br>
+
+                Keep smiling.
+
+                Keep learning.
+
+                Keep dreaming.
+
+                <br><br>
+
+                ❤️
+
+            </p>
+
+            <button onclick="openGallery()">
+
+                📷 See Memories
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery" class="hidden">
+
+        <h2>
+
+            My Beautiful Memories 📸
+
+        </h2>
+
+        <img id="photo"
+             src="images/WhatsApp Image 2026-07-24 at 09.59.10.jpeg">
+
+        <p id="caption">
+
+            Every moment matters ❤️
+
+        </p>
+
+        <button onclick="nextPhoto()">
+
+            Next →
+
+        </button>
+
+    </section>
+
+    <!-- Ending -->
+
+    <section id="ending" class="hidden">
+
+        <h1>
+
+            🎆 Happy Birthday 🎆
+
+        </h1>
+
+        <h2>
+
+            I'm Proud Of You ❤️
+
+        </h2>
+
+        <p>
+
+            Thank you for never giving up.
+            
+
+        </p>
+
+        <p>
+
+            🥳RIFQI
+
+
+        </p>
+
+        <button onclick="location.reload()">
+
+            Replay 🔄
+
+        </button>
+
+    </section>
+
+    <!-- Fireworks -->
+    <canvas id="fireworks"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
